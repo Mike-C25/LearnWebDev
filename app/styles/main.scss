@@ -1,0 +1,107 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+header {
+    .logo {
+        width: 100%;
+    }
+}
+nav {
+    .list-inline {
+        margin-left: 0px;
+    }
+    .nav-list {
+        background-color: black;
+        li {
+            height: 30px;
+            color: white;
+        }
+    }
+    .shortcuts {
+        position: absolute;
+        top: 0px;
+        right: 15px;
+        height: 30px;
+        background-color: gray;
+        li {
+            height: 30px;
+            color: white;
+        }
+    }
+}
+
+// this is only for xs
+section {
+    &.hero {
+        .card {
+            display: block;
+            position: relative;        
+            img {
+                width: 100%;
+            }
+            .caption {
+                position: relative;
+                background-color: transparent;
+                text-align: left;
+                h2 {
+                    color: black;
+                    font-size: 16px;
+                }
+                h3 {
+                    color: red;
+                    font-size: 14px;
+                    span {
+                        color: black;
+                    }
+                } 
+                p {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+// this is for sm and up
+@media (min-width: 768px) {
+    section {
+        &.hero {
+            .card {
+                display: block;
+                position: relative;        
+                img {
+                    width: 100%;
+                }
+                .caption {
+                    position: absolute;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    height: 80px;
+                    background-color: black;
+                    text-align: center;
+                    h2 {
+                        color: white;
+                        font-size: 16px;
+                    }
+                    h3 {
+                        color: red;
+                        font-size: 14px;
+                        span {
+                            color: gray;
+                        }
+                    } 
+                    p {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
